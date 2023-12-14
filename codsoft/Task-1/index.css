@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(16, 16, 16);
+}
+.title{
+    font-size:50px;
+    font-stretch: semi-expanded;
+    text-align: center;
+    
+}
+
+mark{
+    background-color: orange;
+    width:200px;
+}
+
+.intro{
+    color: orange;
+    font-size: 25px;
+
+}
+
+.ph-logo{
+   margin-left: 3px;
+   width:20px;
+   height:20px;
+       
+}
+
+.logo{
+    width:50px;
+    height:45px;
+    margin-top:10px;
+    float:left;
+    
+    
+}
+
+/* .ph-number{
+    font-size: 10px;
+} */
+
+ .number{
+    font-size: 15px;
+} 
+.clear{
+   clear:left;
+}
+
+.box{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:1500px;
+    
+   
+    }
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9{
+    width:200px;
+    height:500px;
+    border:15px solid rgb(255, 143, 7);
+    margin-left:120px;
+    border-style: inset;
+    border-radius: 30px;
+    background-color:rgb(255, 255, 255);
+    padding:10px;
+}
+
+.box2,.box5,.box8{
+    margin-left:280px;
+}
+
+.box3,.box6,.box9{
+    margin-left: 280px;
+}
+
+.box4,.box5,.box6,.box7,.box8,.box9{
+    margin-top: 70px;
+}
+
+
+
+.img-1{
+    width:200px;
+    height:200px;
+    margin-left:1px;
+    
+}
+
+.location{
+    margin-left: 50px;;
+}
+
+.para{
+    font-size: 15px;
+}
+
+.second{
+    margin-left: 100px;
+}
+
+.footer{
+    background-color: white;
+}
+
+.copyrights{
+    margin-left: 500px;
+    font-size: 25px;
+}

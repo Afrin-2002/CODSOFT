@@ -1,0 +1,318 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    nav{
+     position: fixed;
+     
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 75px;
+     background: rgb(255, 0, 0);
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+     z-index: 2;
+    }
+    nav .navbar{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 100%;
+     max-width: 90%;
+     background: #f40202;
+     margin: auto;
+    }
+    nav .navbar .logo a{
+      color: #fff;
+      font-size: 27px;
+      font-weight: 600;
+      text-decoration: none;
+      font-family:"Lucida Handwriting";
+      position: absolute;
+
+    }
+   
+    nav .navbar .menu{
+        display:flex;
+        
+    }
+    .navbar .menu li{
+      list-style: none;
+      margin: 0 15px;
+    }
+    .navbar .menu li a{
+      color: #fff;
+      font-size: 17px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    section{
+      display: flex;
+      
+    }
+    #intro,#skills,
+    #projects,
+    #resume,
+    #contact{
+      background: #fff;
+    }
+    
+
+.intf{
+  font-family:'Times New Roman', Times, serif;
+  color:rgb(8, 8, 8);
+  font-style: oblique;
+  font-size:40px;
+}
+h1{
+  font-family: serif;
+  color:black;
+
+} 
+
+.name{
+  animation: name 1.9s alternate infinite;
+} 
+ 
+@keyframes name {
+  0% {
+   opacity: 0;
+   color: red;
+  }
+  50% {
+   opacity: 1;
+   color:yellow;
+  }
+  100% {
+   opacity: 0;
+  }
+}
+
+ 
+
+.flex-container{
+  
+  display:flex;
+  align-items: center; 
+  grid-template-columns: 4fr;
+  column-gap: 5px;
+}
+
+.int-p{
+  width: 1000px;
+}
+.image-pic{
+  max-width: 100cm;
+  max-height:100cm;
+}
+
+#skills,#projects,#contact,#resume{
+  font-family:'Times New Roman', Times, serif;
+  color:rgb(8, 8, 8);
+  font-style: oblique;
+  font-size:40px;
+  font-weight: bold;
+  
+}
+
+.skill-section{
+  z-index:1;
+}
+.skill{
+  
+  display:flex;
+  flex-wrap:wrap;
+  
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* if u don't want 3d effect then Remove this*/
+  margin-left: 150px;
+  
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #f6b70a;
+  color: whitesmoke;
+  padding:70px;
+}
+
+.flip-box-back {
+  background-color:burlywood;
+  color: white;
+  transform: rotateY(180deg);
+  padding :70px;
+}
+
+.project-container{
+  height:1000px;
+
+}
+
+.project-in{
+  
+   margin-left:140px;
+   width: 1000px;
+   padding:20px;
+   border-style:ridge;
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   justify-content: space-between;
+   
+   
+   
+}
+
+.title{
+  display:flex;
+  justify-content: space-between;
+  border-style:hidden;
+  flex-direction:row;
+  width:1000px;
+}
+
+.project-table{
+  display:flex;
+  justify-content: space-between;
+  border-style:hidden;
+  flex-direction:row;
+  width:1000px;
+  height:200px;
+  
+
+}
+
+.explain-project-1{
+  background-color: pink;
+  font-family: 'Times New Roman', Times, serif;
+  padding:30px;
+  font-size: 20px;
+  width:200px;
+  height:200px;
+  
+}
+
+.explain-project-2{
+  background-color: red;
+  font-family: 'Times New Roman', Times, serif;
+  padding:20px;
+  font-size: 20px;
+  width:200px;
+  height:150px;
+  
+}
+
+.explain-project-3{
+  background-color: yellow;
+
+  font-family: 'Times New Roman', Times, serif;
+  padding:20px;
+  font-size: 20px;
+  width:200px;
+  height:200px;
+  
+}
+
+.explain-project-4{
+  background-color: rgb(255, 170, 0);
+
+  font-family: 'Times New Roman', Times, serif;
+  padding:20px;
+  font-size: 20px;
+  width:200px;
+  height:200px;
+  
+}
+
+
+
+.resume{
+  display:inline-block;
+}
+
+.resume-link{
+  margin-left:300px;
+  font-size:30px;
+  
+} 
+
+.resume1{
+  margin-left:150px;
+  font-size: 20px;
+}
+.rose{
+  width:800px;
+  height:620px;
+  background-color:rgb(255, 170, 0) ;
+  margin-left:300px;
+  position:absolute;
+  padding:45px;
+}
+
+.incontact{
+  width:500px;
+  height:460px;
+  background-color: rgb(254, 205, 10);
+  position:relative;
+  margin-left:440px;
+  margin-top:80px;
+  padding: 20px;
+  
+}
+
+.First-name{
+font-size: medium;
+
+}
+
+.mobile-number{
+  font-size:medium;
+}
+
+.email{
+  font-size:medium;
+}
+
+.line{
+   margin-bottom: 20px; 
+   position:relative;
+  
+}
+
+.submit{
+  margin-left:130px;
+  width:130px;
+  height:25px;
+}
+
+.copyrights{
+    text-align:center;
+}
